@@ -12,7 +12,16 @@ class Fib(object):
         if self.a > 10000: 
             raise StopIteration()
         return self.a
+    def __getitem__(self, n):
+        a, b = 1, 1
+        for x in range(n):
+            a, b = b, a + b
+        
+        return a
 
 
 for n in Fib():
     print(n)
+
+f = Fib()
+print(f[10])
