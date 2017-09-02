@@ -18,9 +18,14 @@ def readByteFileByWith():
             'rb') as f:
         print(f.read())
 
+def writeFileByWith():
+    with open('/Users/wenhuabin/Projects/p3/python3/files/wtest.txt', 'w') as f:
+        print(f.write("hello world teddy"))
+
 readFile()
 readFileByWith()
 readByteFileByWith()
+writeFileByWith()
 
 
 
