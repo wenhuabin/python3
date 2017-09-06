@@ -44,7 +44,17 @@ def run_subproc():
     r = subprocess.call(['nslookup', 'www.python.org'])
     print('Exit code:', r)
 
+def run_subproc_com():
+    print('$ nslookup')
+    p = subprocess.Popen(['nslookup'], stdin=subprocess.PIPE, 
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE)
+    output, err = p.communicate(b'set q=mx\npython.org\nexit\n')
+    print(output.decode('utf-8'))
+    print('Exit code:', p.returncode)
+
 if __name__ == '__main__':
     #run_pool()
-    run_subproc()
+    #run_subproc()
+    run_subproc_com()
 
