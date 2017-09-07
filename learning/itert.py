@@ -1,5 +1,7 @@
 import itertools
 
+#lambda: 匿名函数，有点类似于箭头函数
+
 def icount():
     natuals = itertools.count(1)
     for i in natuals:
