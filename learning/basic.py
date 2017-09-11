@@ -22,7 +22,8 @@ def testForElse():
 
 
 def main():
-    print('Hello there', sys.argv[1]) #sys argvs
+    #sys argvs, sys.argv[0] being the program itself
+    print('Hello there', sys.argv[1]) 
 
 
 
