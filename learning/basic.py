@@ -1,3 +1,4 @@
+import sys
 
 def testWhileElse():
     count = 0
@@ -20,10 +21,14 @@ def testForElse():
     	   print(num, '是一个质数')
 
 
+def main():
+    print('Hello there', sys.argv[1]) #sys argvs
+
 
 
 if __name__ == '__main__':
     testWhileElse()
     testForElse()
+    #main()
 
 
