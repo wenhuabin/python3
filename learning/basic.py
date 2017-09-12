@@ -21,8 +21,12 @@ def testForElse():
     	   print(num, '是一个质数')
 
 def forStep():
+    arr = ['a','b','c']
     for i in range(0, 10, 3):
         print(i)
+    for i, val in enumerate(arr):
+        print(i, val)
+
 
 
 def main():
