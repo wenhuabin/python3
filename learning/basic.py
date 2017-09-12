@@ -20,6 +20,10 @@ def testForElse():
     	else:                  # 循环的 else 部分
     	   print(num, '是一个质数')
 
+def forStep():
+    for i in range(0, 10, 3):
+        print(i)
+
 
 def main():
     #sys argvs, sys.argv[0] being the program itself
@@ -31,5 +35,6 @@ if __name__ == '__main__':
     testWhileElse()
     testForElse()
     #main()
+    forStep()
 
 
