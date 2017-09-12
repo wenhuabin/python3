@@ -42,12 +42,21 @@ def funcMutable(a, L=[]):
     L.append(a)
     return L
 
+#Python doesn't copy objects you pass during a function call ever.
+#Function parameters are names. When you call a function Python binds
+#these parameters to whatever objects you pass (via names in a caller scope).
+#Objects can be mutable (like lists) or immutable (like integers, strings in
+#Python). Mutable object you can change. You can't change a name,
+#you just can bind it to another object.
 
 def funcMutableNone(a, L=None):
     if L is None:
         L=[]
     L.append(a)
     return L
+
+def passParamsTest(x):
+    x=3
 
 def main():
     #sys argvs, sys.argv[0] being the program itself
@@ -69,5 +78,8 @@ if __name__ == '__main__':
     print(funcMutable(4))
     print(funcMutableNone(4))
     print(funcMutableNone(5))
+    x = 4
+    passParamsTest(x)
+    print(x)
 
 
