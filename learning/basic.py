@@ -79,6 +79,9 @@ def parrot(voltage, state='a stiff', action='voom'):
     print("if you put", voltage, "volts through it.", end=' ')
     print("E's", state, "!")
 
+def make_incrementor(n):
+    return lambda x: x+n
+
 
 if __name__ == '__main__':
     testWhileElse()
@@ -107,5 +110,7 @@ if __name__ == '__main__':
     print(concat("earth", "mars", "venus"))
     d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
     parrot(**d)
+    f = make_incrementor(42)
+    print(f(33))
 
 
