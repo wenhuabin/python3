@@ -27,6 +27,12 @@ def forStep():
     for i, val in enumerate(arr):
         print(i, val)
 
+def testIn(x):
+    if x in ['1','2',3]:
+        print('in')
+    else:
+        print('out')
+
 
 
 def main():
@@ -40,5 +46,7 @@ if __name__ == '__main__':
     testForElse()
     #main()
     forStep()
+    testIn(3)
+    testIn('c')
 
 
