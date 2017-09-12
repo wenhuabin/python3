@@ -33,6 +33,11 @@ def testIn(x):
     else:
         print('out')
 
+def funcParams(x, y=1,n='hello'):
+    print(x)
+    print(y)
+    print(n)
+
 
 
 def main():
@@ -48,5 +53,8 @@ if __name__ == '__main__':
     forStep()
     testIn(3)
     testIn('c')
+    funcParams(3)
+    funcParams(3, 2)
+    funcParams(3, 3,'world')
 
 
