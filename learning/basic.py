@@ -94,6 +94,8 @@ if __name__ == '__main__':
            "It's really very, VERY runny, sir.",
            shopkeeper="Michael Palin",
            client="John Cleese",
+           test="Hello World!",
+	   #'hello', SyntaxError: positional argument follows keyword argument
            sketch="Cheese Shop Sketch")
 
 
