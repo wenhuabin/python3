@@ -38,7 +38,16 @@ def funcParams(x, y=1,n='hello'):
     print(y)
     print(n)
 
+def funcMutable(a, L=[]):
+    L.append(a)
+    return L
 
+
+def funcMutableNone(a, L=None):
+    if L is None:
+        L=[]
+    L.append(a)
+    return L
 
 def main():
     #sys argvs, sys.argv[0] being the program itself
@@ -56,5 +65,9 @@ if __name__ == '__main__':
     funcParams(3)
     funcParams(3, 2)
     funcParams(3, 3,'world')
+    print(funcMutable(3))
+    print(funcMutable(4))
+    print(funcMutableNone(4))
+    print(funcMutableNone(5))
 
 
