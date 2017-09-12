@@ -71,6 +71,9 @@ def main():
     #sys argvs, sys.argv[0] being the program itself
     print('Hello there', sys.argv[1]) 
 
+def concat(*args, sep="/"):
+    return sep.join(args)
+
 
 
 if __name__ == '__main__':
@@ -97,5 +100,6 @@ if __name__ == '__main__':
            test="Hello World!",
 	   #'hello', SyntaxError: positional argument follows keyword argument
            sketch="Cheese Shop Sketch")
+    print(concat("earth", "mars", "venus"))
 
 
