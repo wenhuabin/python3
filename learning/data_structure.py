@@ -44,6 +44,8 @@ def createTuple():
 def createSet():
     basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
     print(basket)
+    for i, v in enumerate(basket):
+        print(i, v)
 
 def createDict():
     a = {x: x**2 for x in (2, 4, 6)}
