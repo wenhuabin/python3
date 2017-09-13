@@ -45,10 +45,17 @@ def createSet():
     basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
     print(basket)
 
-
+def createDict():
+    a = {x: x**2 for x in (2, 4, 6)}
+    for k, v in a.items():
+        print(k,v)
 
 if __name__ == '__main__':
     listMethod()
-    createList()
+    #createList()
     createTuple()
     createSet()
+    createDict()
+
+
+
