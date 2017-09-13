@@ -22,11 +22,27 @@ def createList():
     a = list(map(lambda x: x**2, range(10)))
     b = [x**2 for x in range(10)]
     c = [(x, y) for x in range(10) for y in range(20) if x != y]
+    matrix = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+    ]
+    d = [[row[i] for row in matrix] for i in range(4)]
+    del d[0] # remove item from a list
     print(a)
     print(b)
     print(c)
+    print(d)
+
+def createTuple():
+    a = 1,2,3,
+    b = 1,
+    print(a)
+    print(b)
+    print(len(a))
 
 
 if __name__ == '__main__':
     listMethod()
     createList()
+    createTuple()
