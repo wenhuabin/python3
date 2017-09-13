@@ -21,8 +21,10 @@ def listMethod():
 def createList():
     a = list(map(lambda x: x**2, range(10)))
     b = [x**2 for x in range(10)]
+    c = [(x, y) for x in range(10) for y in range(20) if x != y]
     print(a)
     print(b)
+    print(c)
 
 
 if __name__ == '__main__':
