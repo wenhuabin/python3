@@ -32,7 +32,6 @@ def paginate(num, results):
     else:
         for i in range(lcount):
             list.append(tlist.pop(0))
-        print(tlist)
         list.append("")
         list += paginate(num, tlist)
 
