@@ -18,6 +18,13 @@ def listMethod():
     print(a)
     print(b)
 
+def createList():
+    a = list(map(lambda x: x**2, range(10)))
+    b = [x**2 for x in range(10)]
+    print(a)
+    print(b)
+
 
 if __name__ == '__main__':
     listMethod()
+    createList()
