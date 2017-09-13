@@ -41,8 +41,14 @@ def createTuple():
     print(b)
     print(len(a))
 
+def createSet():
+    basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+    print(basket)
+
+
 
 if __name__ == '__main__':
     listMethod()
     createList()
     createTuple()
+    createSet()
