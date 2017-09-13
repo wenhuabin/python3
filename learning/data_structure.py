@@ -52,12 +52,22 @@ def createDict():
     for k, v in a.items():
         print(k,v)
 
+def condition():
+    print(2 in [1,3])
+    print(2 not in [1,3])
+    # wrone example, maybe class
+    print({1:3, 2:4} is {1:3, 2:4})
+    print({1:3, 2:4} is not {1:3, 2:4})
+    print((1, 2, 3) < (1, 2, 4))
+    print('ABC' < 'C' < 'Pascal' < 'Python')
+
 if __name__ == '__main__':
     listMethod()
     #createList()
     createTuple()
     createSet()
     createDict()
+    condition()
 
 
 
