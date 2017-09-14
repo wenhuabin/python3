@@ -62,6 +62,7 @@ def condition():
     print('ABC' < 'C' < 'Pascal' < 'Python')
 
 if __name__ == '__main__':
+    print(__name__)
     listMethod()
     #createList()
     createTuple()
